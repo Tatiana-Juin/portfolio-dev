@@ -10,7 +10,7 @@ body {
 main h2 {
     text-align: center;
     margin-top: 30px;
-    font-size:31px;
+    font-size:1.938rem;
     
 }
 /* DIV QUI SAUVEGARDE TOUTE LES CARD  */
@@ -38,14 +38,14 @@ main h2 {
     transform: translateY(-5px); 
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); 
 }
-/*  */
+/* POUR LES IMAGES DE LA CARD  */
 .card-img{
    width: 100%;
-    height:250px;
-    object-fit: cover;
+    height:204px;
+    object-fit: contain;
     border-radius: 25px;
 }
-
+/* TITRE DE LA CARD */
 .title-card{
     margin-top:15px;
     color:black;
@@ -57,11 +57,10 @@ main h2 {
     margin-left:20px;
     
 }
-
+/* LANGUAGE DE PROGRAMMATION UTILISER  */
 .language-prog{
     display: flex;
 }
-
 
 .language-prog p{
     margin-right:15px;
@@ -71,6 +70,7 @@ main h2 {
     padding: 10px;
     
 }
+/* LIEN DE LA CARD GITHUB PAR EXEMPLE  */
 .link-card{
     margin-top: 15px;
     text-decoration: none;
@@ -82,6 +82,7 @@ main h2 {
     
 }
 
+/* TAG POUR LES LANGAGES DE PROGRAMMATION */
 .tag-html{
     background-color: #f3e8ff; 
     color: #7e22ce; 
@@ -96,4 +97,9 @@ main h2 {
 .tag-php{
      background-color: #fef3c7; 
      color: #b45309;  
+}
+
+/* POUR AFFICHER TOUS LES LIENS  */
+.card-links{
+    display: flex;
 }
