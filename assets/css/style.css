@@ -183,6 +183,7 @@ body {
     gap: 15px;
     padding-bottom: 80px;
 }
+
 /* POUR LES LIENS  */
 .social-btn{
     padding: 12px 25px;
@@ -207,19 +208,52 @@ body {
     color: white;
 }
 
-
-
-/* RESPONSIVE  */
-@media screen and(max-width:768px){
-    .card-sans-image { 
-        width: 90%; 
-        height: auto; 
+@media screen and (max-width:566px){
+   
+    .projects-container{
+        width:90%!important;
+        justify-content: center;
     }
+    .card-sans-image {
+        
+        width: 90% !important; 
+        max-width: 400px; 
+        margin: 10px 0;   
+        height: auto;    
+    }
+    /* pour les compétences  */
     .skills-grid { 
         display: grid; grid-template-columns: repeat(2, 1fr); 
         justify-items: center; 
     }
+
+    .about-content{
+        width:90%;
+        margin:auto;
+    }
+    
+}
+
+/* RESPONSIVE  */
+@media screen and (min-width:567px) and  (max-width:900px){
+    .projects-container{
+        width:90%!important;
+        justify-content: center;
+    }
+    .card-sans-image { 
+        width: 80%; 
+        height: auto; 
+    }
+    .skills-grid { 
+        display: grid; grid-template-columns: repeat(3, 1fr); 
+        justify-items: center; 
+    }
     .skill-card { 
         width: 140px; 
+    }
+
+    .about-content{
+        width:80%;
+        margin:auto;
     }
 }
