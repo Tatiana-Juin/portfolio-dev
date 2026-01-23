@@ -109,7 +109,7 @@ h1 {
     font-size: 0.85rem;
     color: #9333EA;
     margin-bottom: 30px; 
-    font-weight: 700;
+    font-weight: bolder;
     margin-bottom: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -185,9 +185,7 @@ main h2 {
     
 }
 
-/* ======================================= */
-/* --- MOBILE & RESPONSIVE (max-width: 768px) --- */
-/* ======================================= */
+
 @media screen and (max-width: 550px) {
     
     /* Le HEADER prend aussi 60vh sur mobile */
@@ -250,6 +248,9 @@ main h2 {
         text-align: start;
     }
 }
+/* ======================================= */
+/* --- MOBILE & RESPONSIVE min-width: 551px (max-width: 768px) --- */
+/* ======================================= */
 @media screen and (min-width:551px) and (max-width:768px){
     /* Le HEADER prend aussi 60vh sur mobile */
     header {
