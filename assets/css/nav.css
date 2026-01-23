@@ -94,6 +94,7 @@ nav {
     align-items: center; 
     text-align: center;
     padding-top: 50px; 
+    
 }
 /* TITRE PRINCIPALE DE LA PAGE  */
 h1 {
@@ -101,37 +102,61 @@ h1 {
     font-weight: 800;
     color: #111;
     letter-spacing: -2px; 
-    margin-bottom: 10px;
+    margin: 25px 0 25px 0;
 }
 /* SOUS TITRE  */
 .header-substitle {
-    font-size: 1.2rem;
-    color: #666;
+    font-size: 0.85rem;
+    color: #9333EA;
     margin-bottom: 30px; 
-    font-weight: 400;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
-button {
-    padding: 18px 35px;
-    background-color: #111;
-    color: white;
-    border: none;
+/* Pour la description */
+.header-description{
+    font-size: 1.1rem;
+    color: #475569;
+    max-width: 580px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+    text-align: start;
+}
+/* Style qui regroupe les deux div  */
+.cta-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ .btn {
+    padding: 12px 24px;
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-button a{
-    color:white;
     text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: #0f172a;
+    border: 2px solid #0f172a;
 }
 
-button:hover {
-    transform: translateY(-3px);
-    background-color: #333;
+
+
+.btn:hover {
+    background-color: #9333EA;
+    transform: translateY(-2px);
+    color:white;
 }
+
+
+
+
 /* *************FOOTER******** */
 footer{
     text-align: center;
@@ -163,11 +188,72 @@ main h2 {
 /* ======================================= */
 /* --- MOBILE & RESPONSIVE (max-width: 768px) --- */
 /* ======================================= */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 550px) {
     
     /* Le HEADER prend aussi 60vh sur mobile */
     header {
-        height: 60vh; 
+        height: 80vh; 
+    }
+    
+    h1 { 
+        font-size: 2rem; 
+    }
+    
+    nav {
+        width: 95%;
+        padding: 0 20px;
+    }
+
+    .hamburger {
+        display: block; 
+        cursor: pointer;
+        z-index: 1002;
+    }
+
+    .nav-link {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #FFFFFF; 
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        
+        z-index: 900;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: all 0.4s ease;
+    }
+
+    .nav-link li a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #111;
+    }
+
+    .nav-link.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        z-index: 950;
+    }
+    .cta-container{
+        flex-direction: column;
+    }
+    .header-description{
+        margin:20px;
+        text-align: start;
+    }
+}
+@media screen and (min-width:551px) and (max-width:768px){
+    /* Le HEADER prend aussi 60vh sur mobile */
+    header {
+        height: 70vh; 
     }
     
     h1 { 
@@ -216,5 +302,12 @@ main h2 {
         visibility: visible;
         transform: translateY(0);
         z-index: 950;
+    }
+    .cta-container{
+        flex-direction: column;
+    }
+    .header-description{
+        margin:30px;
+        text-align: start;
     }
 }
