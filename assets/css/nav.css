@@ -16,11 +16,10 @@ body {
 /* --- LE HEADER (MODIFIÉ : HAUTEUR 60VH) --- */
 header {
     width: 100vw;
-    /* height: 60vh;  */
+    height: 60vh; 
     background-image: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); 
     position: relative;
-    /* overflow: hidden; */
-    min-height:60vh;
+    overflow: hidden;
 }
 
 /* --- LA NAVBAR FLOTTANT --- */
@@ -94,7 +93,7 @@ nav {
     justify-content: center; 
     align-items: center; 
     text-align: center;
-    padding-top: 100px; 
+    padding-top: 50px; 
     
 }
 /* TITRE PRINCIPALE DE LA PAGE  */
@@ -110,7 +109,7 @@ h1 {
     font-size: 0.85rem;
     color: #9333EA;
     margin-bottom: 30px; 
-    font-weight: bolder;
+    font-weight: 700;
     margin-bottom: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -145,7 +144,6 @@ h1 {
     background-color: transparent;
     color: #0f172a;
     border: 2px solid #0f172a;
-    margin-bottom: 30px;
 }
 
 
@@ -187,13 +185,14 @@ main h2 {
     
 }
 
-
+/* ======================================= */
+/* --- MOBILE & RESPONSIVE (max-width: 768px) --- */
+/* ======================================= */
 @media screen and (max-width: 550px) {
     
     /* Le HEADER prend aussi 60vh sur mobile */
     header {
-       min-height: 80vh; 
-       height:auto;
+        height: 80vh; 
     }
     
     h1 { 
@@ -250,24 +249,11 @@ main h2 {
         margin:20px;
         text-align: start;
     }
-    .header-title{
-        padding-top:91px;
-    }
-    .btn{
-        margin-bottom:0px;
-    }
-      .btn:last-child{
-        margin-bottom:30px;
-    }
 }
-/* ======================================= */
-/* --- MOBILE & RESPONSIVE min-width: 551px (max-width: 768px) --- */
-/* ======================================= */
 @media screen and (min-width:551px) and (max-width:768px){
     /* Le HEADER prend aussi 60vh sur mobile */
     header {
-        min-height: 70vh; 
-        height:auto;
+        height: 70vh; 
     }
     
     h1 { 
@@ -320,18 +306,8 @@ main h2 {
     .cta-container{
         flex-direction: column;
     }
-    
     .header-description{
         margin:30px;
         text-align: start;
-    }
-    .header-title{
-        padding-top:91px;
-    }
-    .btn{
-        margin-bottom:0px;
-    }
-    .btn:last-child{
-        margin-bottom:30px;
     }
 }

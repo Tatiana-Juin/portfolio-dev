@@ -181,14 +181,13 @@ h2{
     line-height: 1.8;
     color:#4B5563;
 }
-
 .about-para{
     margin-top:15px;
 }
-
 .about-para-valeur{
     font-weight:bolder;
 }
+
 /* RESEAUX SOCIAUX  */
 .social-links{
     display: flex;
