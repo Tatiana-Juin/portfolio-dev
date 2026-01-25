@@ -27,6 +27,11 @@ body {
     color:#9333EA;
 }
 
+.btn-about{
+    text-decoration: none;
+    color:#9333EA;
+}
+
 .btn-back{
     display: inline-flex;
     align-items:center;
